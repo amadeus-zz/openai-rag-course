@@ -42,7 +42,8 @@ def main():
         messages=[
             {"role": "system", "content": "你是一个友好的助手"},
             {"role": "user", "content": "say `hello world!`"}
-        ]
+        ],
+        temperature=0.7  # 控制输出的随机性，0-2之间，值越大越随机，越小越确定
     )
     print(response.choices[0].message.content)
     print()

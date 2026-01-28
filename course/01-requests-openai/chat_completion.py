@@ -15,7 +15,7 @@ import urllib.request  # 用于发送HTTP请求
 
 # 全局常量配置
 BASE_URL = "http://143.64.120.39:8695/v1"
-API_KEY = "<YOUR_API_KEY>"
+API_KEY = "<YOUR_API_KEY>" #从.env文件中粘贴API_KEY
 MODEL_NAME = "gpt-5-chat"
 
 
@@ -29,7 +29,8 @@ def main():
         "messages": [
             {"role": "system", "content": "你是一个友好的助手"},
             {"role": "user", "content": "say `hello world!`"}
-        ]
+        ],
+        "temperature": 0.7  # 控制输出的随机性，0-1之间，值越大越随机，越小越确定
     }
     
     # 将字典转换为JSON字符串，并编码为字节
