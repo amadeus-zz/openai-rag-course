@@ -32,8 +32,7 @@ import numpy as np  # numpy提供向量和矩阵运算，这里用于计算余�
 
 # 全局常量配置
 BASE_URL = "http://143.64.120.39:8695/v1"
-# API_KEY = "<YOUR_API_KEY>"
-API_KEY = "sk-7a1sFp3LO2v7rPqMCgohku1MxNyRK66LSybzcP0NJWk7mhWD"
+API_KEY = "<YOUR_API_KEY>"
 EMBEDDING_MODEL_NAME = "NNIT-Ada-3-large"
 
 
